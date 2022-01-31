@@ -1,0 +1,21 @@
+@import 'var.scss';
+@import 'asidenav.scss';
+@import 'main.scss';
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: $defaultFont;
+    font-size: $defaultFontSize;
+    display: flex;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

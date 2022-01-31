@@ -1,0 +1,88 @@
+@import 'var.scss';
+main {
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    }
+    padding: 0 1rem;
+    width: 85%;
+    header {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search {
+            background: url('img/search.png') no-repeat scroll 10px 10px;
+            background-size: 1rem;
+            padding-left: 30px;
+            height: 100%;
+            border: none;
+        }
+    }
+    .photos {
+        margin: 2rem 0;
+        .action-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            ul {
+                display: flex;
+                li {
+                    margin: 0 0.3rem;
+                    input {
+                        display: none;
+                    }
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+            button {
+                background-color: rgba($color: $asideNavColor, $alpha: 0);
+                border-radius: 5px;
+                border: none;
+                padding: 5px;
+                &:hover,
+                &:active {
+                    background-color: rgba($color: $asideNavColor, $alpha: 1);
+                    color: white;
+                    transition: 300ms;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    #photos-container {
+        display: flex;
+        flex-wrap: wrap;
+        .photo-wrapper {
+            width: 200px;
+            height: 300px;
+            border: 1px solid;
+            .img {
+                background-size: cover;
+                height: 80%;
+                background-position: center;
+            }
+            span {
+                font-size: 10px;
+                &:nth-child(3) {
+                    color: gray;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem;
+        }
+    }
+}

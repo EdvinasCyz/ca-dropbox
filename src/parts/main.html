@@ -1,0 +1,40 @@
+<main>
+    <header>
+        <input class="search" type="text" placeholder="Search" />
+
+        <div class="user-wrapper">
+            <img src="./img/bell.png" alt="" />
+            <span>Eddie Lebanovski</span>
+        </div>
+    </header>
+    <section class="photos">
+        <h1>Photos</h1>
+        <div class="action-container">
+            <ul>
+                <li>
+                    <label for="file"><img src="./img/upload.png" alt="" /></label>
+                    <input id="file" type="file" accept="image/png image/jpg image/jpeg" multiple />
+
+                    <button type="file" id="uploadBtn">Upload</button>
+                </li>
+                <li>
+                    <a href=""><img src="./img/new_folder.png" alt="" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/share_folder.png" alt="" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/delete.png" alt="" /></a>
+                </li>
+            </ul>
+            <div class="filter-buttons">
+                <button>Name</button>
+                <button>Size</button>
+                <button>Modified</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos-container"></section>
+    <script src="js/items_data-min.js"></script>
+</main>
